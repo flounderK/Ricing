@@ -18,5 +18,7 @@ def printchars(start, stop, exclude=None, alt_exclude=0x25a1):
 
 if __name__ == "__main__":
     print("Character Sets\n")
+    # japanese characters
     printchars(0x3040, 0x30ff, {0x3040, 0x3097, 0x3098}, 0x25a1)
+    # emojis
     printchars(0x1f000, 0x1f8ff)
